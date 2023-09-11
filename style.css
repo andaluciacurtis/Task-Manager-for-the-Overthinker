@@ -4,6 +4,15 @@ html, body {
   margin:auto;
 }
 
+h1 {
+  color:white;
+}
+
+h2 {
+  text-align:center;
+  color:rgb(114, 114, 114);
+}
+
 header {
   background-color:rgb(114, 114, 114);
   margin:10px;
@@ -23,36 +32,50 @@ header {
   margin:10px;
 }
 
+/* -----------------------Left Side -----------------------*/
+
 .next-task-container {
-  background-color:red;
+  background-color:rgb(114, 114, 114);
   height:20%;
 }
 
 .brain-dump-container {
   height:70%;
-  background-color:red;
+  background-color:rgb(114, 114, 114);
 }
+
+/* ----------------------- Middle ----------------------- */
 
 .timer {
   aspect-ratio: 1/1;
-  border:15px rgb(165, 165, 165) solid;
+  border:15px rgb(114, 114, 114) solid;
   border-radius:50%;
   margin: 20px 20px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.time-left {
+  font-size:3rem;
 }
 
 .current-task-container {
-  background-color:red;
+  background-color:rgb(187, 187, 187);
   height:18%;
   margin:10px;
 }
 
 .task-controls {
-  background-color:red;
+  background-color:rgb(187, 187, 187);
   height:10%;
   margin:10px;
 }
 
+/* ----------------------- Right Side ----------------------- */
+
 .notes {
-  background-color:red;
+  background-color:rgb(114, 114, 114);
   height:80%;
 }
