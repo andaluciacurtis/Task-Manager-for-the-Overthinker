@@ -1,7 +1,10 @@
+/* ----------------------- General -----------------------*/
+
 html, body {
   height:100%;
   max-width:1280px;
   margin:auto;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 h1 {
@@ -32,16 +35,25 @@ header {
   margin:10px;
 }
 
+.task-container div, .time-container div, .notes-container div {
+  margin:10px 20px;
+}
+
+
 /* -----------------------Left Side -----------------------*/
 
 .next-task-container {
   background-color:rgb(114, 114, 114);
-  height:20%;
+  height:10%;
 }
 
 .brain-dump-container {
   height:70%;
   background-color:rgb(114, 114, 114);
+}
+
+.task {
+  background-color:rgb(233, 233, 233);
 }
 
 /* ----------------------- Middle ----------------------- */
@@ -58,7 +70,7 @@ header {
 }
 
 .time-left {
-  font-size:3rem;
+  font-size:4rem;
 }
 
 .current-task-container {
@@ -77,5 +89,5 @@ header {
 
 .notes {
   background-color:rgb(114, 114, 114);
-  height:80%;
+  height:60%;
 }
