@@ -1,14 +1,14 @@
 html, body {
   height:100%;
-  max-width:960px;
+  max-width:1280px;
   margin:auto;
 }
 
 header {
-  background-color:blue;
+  background-color:rgb(114, 114, 114);
   margin:10px;
   text-align:center;
-  padding:15px;
+  padding:10px;
 }
 
 .main-container {
@@ -18,16 +18,26 @@ header {
 }
 
 .task-container, .time-container, .notes-container {
-  background-color:green;
+  background-color:rgb(233, 233, 233);
   width:30%;
   margin:10px;
 }
 
+.next-task-container {
+  background-color:red;
+  height:20%;
+}
+
+.brain-dump-container {
+  height:70%;
+  background-color:red;
+}
+
 .timer {
   aspect-ratio: 1/1;
-  border:30px red solid;
+  border:15px rgb(165, 165, 165) solid;
   border-radius:50%;
-  margin: 20px 40px;
+  margin: 20px 20px;
 }
 
 .current-task-container {
@@ -40,4 +50,9 @@ header {
   background-color:red;
   height:10%;
   margin:10px;
+}
+
+.notes {
+  background-color:red;
+  height:80%;
 }
