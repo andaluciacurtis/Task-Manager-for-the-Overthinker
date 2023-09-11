@@ -5,6 +5,7 @@ html, body {
   max-width:1280px;
   margin:auto;
   font-family: 'Josefin Sans', sans-serif;
+  overflow:hidden;
 }
 
 h1 {
@@ -29,8 +30,13 @@ header {
   justify-content:space-evenly;
 }
 
-.task-container, .time-container, .notes-container {
+.task-container,  .notes-container {
   background-color:rgb(233, 233, 233);
+  width:30%;
+  margin:10px;
+}
+
+.time-container {
   width:30%;
   margin:10px;
 }
@@ -39,21 +45,32 @@ header {
   margin:10px 20px;
 }
 
-
 /* -----------------------Left Side -----------------------*/
 
 .next-task-container {
   background-color:rgb(114, 114, 114);
-  height:10%;
+  padding:10px;
 }
 
 .brain-dump-container {
-  height:70%;
+  height:60%;
   background-color:rgb(114, 114, 114);
+  padding:10px;
+  overflow-y:auto;
 }
 
 .task {
   background-color:rgb(233, 233, 233);
+  border-radius:10px;
+  text-align:center;
+  padding:15px 15px;
+}
+
+.sub-task {
+  background-color:rgb(233, 233, 233);
+  border-radius:10px;
+  text-align:center;
+  padding:10px 15px;
 }
 
 /* ----------------------- Middle ----------------------- */
@@ -90,4 +107,6 @@ header {
 .notes {
   background-color:rgb(114, 114, 114);
   height:60%;
+
+  overflow-y:auto;
 }
