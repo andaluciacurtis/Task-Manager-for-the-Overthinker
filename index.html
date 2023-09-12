@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task Manager for the Over-Thinker</title>
 
+  <!-- CSS link for the font "Josefin" -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <!-- Script for Font Awesome icons -->
+  <script src="https://kit.fontawesome.com/4a90a8143b.js" crossorigin="anonymous"></script>
+  
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header><h1>Task Manager for the Over-Thinker</h1></header>
+  <header><h1>Task Manager</h1></header>
   <div class="main-container">
     <div class="task-container">
       <h2>Next Task</h2>
@@ -41,30 +47,30 @@
 
       </div>
 
-      <p>Add</p>
+      <i class="fa-solid fa-plus add-button"></i>
     </div>
 
     <div class="time-container">
       <div class="timer">
         <p class="time-left">00:04</p>
       </div>
+      <div class="task-controls">
+        <h2><i class="fa-solid fa-backward"></i> <i class="fa-solid fa-pause"></i> <i class="fa-solid fa-forward"></i></h2>
+      </div>
       <div class="current-task-container">
         <h2>Current Task</h2>
         <div class="task">Add the basics</div>
-      </div>
-      <div class="task-controls">
-        <h2>Restart | Pause | Skip</h2>
       </div>
       
       <p>Up next: </p>
     </div>
 
     <div class="notes-container">
+      <div class="basic-controls">
+        <i class="fa-solid fa-file-pen"></i> <i class="fa-solid fa-check-double"></i> <i class="fa-solid fa-gears"></i>
+      </div>
       <h2>Notes</h2>
       <div class="notes"></div>
-      <div class="basic-controls">
-        <h2>Notes | Finished Tasks | Settings</h2>
-      </div>
     </div>
   </div>
 </body>
