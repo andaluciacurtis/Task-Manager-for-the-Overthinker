@@ -94,15 +94,53 @@ header {
 }
 
 .semicircle {
-  background-color:red;
   height:100%;
   width:50%;
+  position:absolute;
+  top:0;
+  left:0;
   transform-origin: right center;
+}
+
+.semicircle:nth-child(1) {
+  background-color:red;
+  z-index:2
+}
+
+.semicircle:nth-child(2) {
+  background-color:blue;
+  z-index:3
+}
+
+.semicircle:nth-child(3) {
+  background-color:rgb(114, 114, 114);
+  z-index:4
 }
 
 .timer:hover .semicircle:nth-child(1) {
   transform: rotate(180deg);
-  transition: 5s linear;
+  transition: 1s linear;
+}
+
+.timer:hover .semicircle:nth-child(2) {
+  transform: rotate(360deg);
+  transition: 2s linear;
+}
+
+.timer:hover .semicircle:nth-child(3) {
+  opacity:0;
+  transition: opacity 0s 1s;
+}
+
+.front-circle {
+  background-color:yellow;
+  border-radius:50%;
+  max-height:200px;
+  aspect-ratio:1/1;
+  position:relative;
+
+  margin:auto;
+  z-index:5;
 }
 
 .time-left {
