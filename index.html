@@ -19,43 +19,29 @@
 <body>
   <header><h1>Task Manager</h1></header>
   <div class="main-container">
-    <div class="task-container">
-      <div class="collapse-button-left"><i class="fa-solid fa-angles-left"></i></div>
 
-      <h2>Next Task</h2>
-      <div class="next-task-container">
-        <div class="task">Write JS</div>
-      </div>
+    <div class="left-container">
 
-      <h2>Brain Dump</h2>
-      <div class="brain-dump-container">
-        <div class="task">Make clock</div>
-        <div class="task">Add drag and drop</div>
-        <div class="sub-task">- Into 'Next Task'</div>
-        <div class="sub-task">- Into 'Brain Dump'</div>
-        <div class="task">Make responsive</div>
-        
-        <div class="task">Make clock</div>
-        <div class="task">Add drag and drop</div>
-        <div class="sub-task">- Into 'Next Task'</div>
-        <div class="sub-task">- Into 'Brain Dump'</div>
-        <div class="task">Make responsive</div>
-        
-        <div class="task">Make clock</div>
-        <div class="task">Add drag and drop</div>
-        <div class="sub-task">- Into 'Next Task'</div>
-        <div class="sub-task">- Into 'Brain Dump'</div>
-        <div class="task">Make responsive</div>
+      <div class="task-container">
+        <h2>Next Task</h2>
+        <div class="next-task-container">
+        </div>
 
+        <h2>Brain Dump</h2>
+        <div class="brain-dump-container">
+        </div>
       </div>
 
       <i class="fa-solid fa-plus add-button"></i>
-    </div>
 
-    <div class="time-container">
+    </div>
+    <div class="collapse-button-left"><i class="fa-solid fa-angles-left"></i></div>
+
+    <div class="center-container">
       <div class="timer">
         <p class="time-left">00:04</p>
       </div>
+      
       <div class="task-controls">
         <h2><i class="fa-solid fa-backward"></i> <i class="fa-solid fa-pause"></i> <i class="fa-solid fa-forward"></i></h2>
       </div>
@@ -67,16 +53,19 @@
       <p>Up next: </p>
     </div>
 
-    <div class="notes-container">
-      <div class="collapse-button-right"><i class="fa-solid fa-angles-right"></i></div>
-      <div class="basic-controls">
-        <i class="fa-solid fa-file-pen"></i> <i class="fa-solid fa-check-double"></i> <i class="fa-solid fa-gears"></i>
+    <div class="collapse-button-right"><i class="fa-solid fa-angles-right"></i></div>
+
+    <div class="right-container">
+      <div class="notes-container">
+        <div class="basic-controls">
+          <i class="fa-solid fa-file-pen"></i> <i class="fa-solid fa-check-double"></i> <i class="fa-solid fa-gears"></i>
+        </div>
+        <h2>Notes</h2>
+        <div class="notes"></div>
       </div>
-      <h2>Notes</h2>
-      <div class="notes"></div>
     </div>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>

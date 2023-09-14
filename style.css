@@ -8,19 +8,6 @@ html, body {
   overflow:hidden;
 }
 
-h1 {
-  color:white;
-}
-
-h2 {
-  text-align:center;
-  color:rgb(114, 114, 114);
-}
-
-i {
-  cursor:pointer;
-}
-
 header {
   background-color:rgb(114, 114, 114);
   margin:10px;
@@ -31,38 +18,27 @@ header {
 .main-container {
   display:flex;
   height:80%;
-  justify-content:space-evenly;
+  justify-content:space-between;
 }
 
-.task-container,  .notes-container {
+.left-container, .right-container  {
   background-color:rgb(233, 233, 233);
-  width:30%;
+  width:25%;
   margin:10px;
   text-align:center;
+  transition: width 0.2s;
 }
 
-.time-container {
+.center-container {
   width:30%;
   margin:10px;
+  transition: width 0.2s;
+  flex-grow:1;
+  
 }
 
-.task-container div, .time-container div, .notes-container div {
+.left-container div, .center-container div, .right-container div {
   margin:10px 20px;
-}
-
-.collapse-button-left {
-  text-align:right;
-  font-size:1.5rem;
-}
-
-.collapse-button-right {
-  text-align:left;
-  font-size: 1.5rem;
-}
-
-.collapse-button-right i:hover, .collapse-button-left i:hover {
-  background-color:rgb(114, 114, 114);
-  color:white;
 }
 
 /* -----------------------Left Side -----------------------*/
@@ -84,14 +60,6 @@ header {
   border-radius:10px;
   text-align:center;
   padding:15px 15px;
-  cursor:pointer;
-}
-
-.sub-task {
-  background-color:rgb(233, 233, 233);
-  border-radius:10px;
-  text-align:center;
-  padding:10px 15px;
   cursor:pointer;
 }
 
@@ -130,11 +98,6 @@ header {
   padding:10px;
 }
 
-.task-controls {
-  margin:10px;
-  font-size:1.5rem;
-}
-
 /* ----------------------- Right Side ----------------------- */
 
 .basic-controls {
@@ -160,4 +123,27 @@ header {
   background-color:rgb(114, 114, 114);
   height:75%;
   overflow-y:auto;
+}
+
+/* ----------------------- For Collapsing -----------------------*/
+
+.collapse-button-left {
+  font-size:1.5rem;
+  background-color:darkgrey;
+  height:fit-content;
+  padding:10px;
+  cursor:pointer;
+}
+
+.collapse-button-right {
+  font-size:1.5rem;
+  background-color:darkgrey;
+  height:fit-content;
+  padding:10px;
+  cursor:pointer;
+}
+
+.collapsed {
+  width:0px;
+  overflow:hidden;
 }
