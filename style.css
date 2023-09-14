@@ -34,7 +34,10 @@ header {
   margin:10px;
   transition: width 0.2s;
   flex-grow:1;
-  text-align:center;
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .left-container div, .center-container div, .right-container div {
@@ -58,7 +61,6 @@ header {
 .task {
   background-color:rgb(233, 233, 233);
   border-radius:10px;
-  text-align:center;
   padding:15px 15px;
   cursor:pointer;
 }
@@ -76,12 +78,20 @@ header {
 
 /* ----------------------- Middle ----------------------- */
 
+.timer-container {
+  max-width:450px;
+  text-align:center;
+
+  flex-grow:1;
+}
+
 .timer {
   border:15px rgb(114, 114, 114) solid;
   border-radius:50%;
   margin: 20px 20px;
 
-  height:400px;
+  max-height:380px;
+  aspect-ratio:1/1;
 
   display:flex;
   align-items:center;
