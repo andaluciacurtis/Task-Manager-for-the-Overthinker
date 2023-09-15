@@ -133,11 +133,13 @@ header {
 }
 
 .front-circle {
-  background-color:yellow;
+  background-color:white;
   border-radius:50%;
-  max-height:200px;
+  height:90%;
   aspect-ratio:1/1;
-  position:relative;
+  position:absolute;
+  left: 5%;
+  top: 5%;
 
   margin:auto;
   z-index:5;
