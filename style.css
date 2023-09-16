@@ -148,6 +148,9 @@ header {
 .time-left {
   font-size:4rem;
   position:absolute;
+  z-index:6;
+  left: 30%;
+  top: 30%;
 }
 
 .current-task-container {
