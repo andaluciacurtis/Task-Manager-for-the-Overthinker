@@ -46,8 +46,6 @@ header {
   justify-content:center;
   align-items:center;
   flex-direction: column;
-
-  background-color: red;
 }
 
 .left-container div, .right-container div {
@@ -95,7 +93,10 @@ header {
 
 .timer {
   background-color:rgb(114, 114, 114);
-  /* border-radius:50%; */
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   height: 300px;
   width: 300px;
