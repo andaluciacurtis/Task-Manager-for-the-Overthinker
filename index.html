@@ -17,59 +17,63 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header><h1>Task Manager</h1></header>
-  <div class="main-container">
 
-    <div class="left-container">
+  <div class="outer-container">
+    <header><h1>Task Manager</h1></header>
+    <div class="main-container">
+  
+      <div class="left-container">
 
-      <div class="task-container">
-        <h2>Next Task</h2>
-        <div class="next-task-container">
+        <div class="task-container">
+          <h2>Next Task</h2>
+          <div class="next-task-container">
+          </div>
+  
+          <h2>Brain Dump</h2>
+          <div class="brain-dump-container">
+            
+          </div>
         </div>
-
-        <h2>Brain Dump</h2>
-        <div class="brain-dump-container">
-        </div>
+  
+        <i class="fa-solid fa-plus add-button"></i>
+  
       </div>
-
-      <i class="fa-solid fa-plus add-button"></i>
-
-    </div>
-    <div class="collapse-button-left"><i class="fa-solid fa-angles-left"></i></div>
-
-    <div class="center-container">
-      <div class="timer-container">
-        <div class="timer">
-          <div class="semicircle"></div>
-          <div class="semicircle"></div>
-          <div class="semicircle"></div>
-
-          <div class="front-circle"></div>
+      <div class="collapse-button-left"><i class="fa-solid fa-angles-left"></i></div>
+  
+      <div class="center-container">
+        <div class="timer-container">
+          <div class="timer">
+            <!-- <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+  
+            <div class="front-circle"></div> -->
+            
+            <p class="time-left">00:04</p>
+          </div>
           
-          <p class="time-left">00:04</p>
+          <div class="task-controls">
+            <h2><i class="fa-solid fa-backward"></i> <i class="fa-solid fa-pause"></i> <i class="fa-solid fa-forward"></i></h2>
+          </div>
+          <h2>Current Task</h2>
+          <div class="current-task-container">
+            <div class="task">Add the basics</div>
+          </div>
+          
+          <p>Up next: </p>
         </div>
-        
-        <div class="task-controls">
-          <h2><i class="fa-solid fa-backward"></i> <i class="fa-solid fa-pause"></i> <i class="fa-solid fa-forward"></i></h2>
-        </div>
-        <h2>Current Task</h2>
-        <div class="current-task-container">
-          <div class="task">Add the basics</div>
-        </div>
-        
-        <p>Up next: </p>
       </div>
-    </div>
-
-    <div class="collapse-button-right"><i class="fa-solid fa-angles-right"></i></div>
-
-    <div class="right-container">
-      <div class="notes-container">
-        <div class="basic-controls">
-          <i class="fa-solid fa-file-pen"></i> <i class="fa-solid fa-check-double"></i> <i class="fa-solid fa-gears"></i>
+  
+      <div class="collapse-button-right"><i class="fa-solid fa-angles-right"></i></div>
+  
+      <div class="right-container">
+          <div class="notes-container">
+          <div class="basic-controls">
+            <i class="fa-solid fa-file-pen"></i> <i class="fa-solid fa-check-double"></i> <i class="fa-solid fa-gears"></i>
+          </div>
+          <h2>Notes</h2>
+          <div class="notes"></div>
         </div>
-        <h2>Notes</h2>
-        <div class="notes"></div>
       </div>
     </div>
   </div>
